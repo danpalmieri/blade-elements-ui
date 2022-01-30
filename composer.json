@@ -1,8 +1,9 @@
 {
     "name": "danpalmieri/blade-elements-ui",
     "description": "Laravel Blade components using TALL stack.",
+    "keywords": ["laravel", "tailwind", "blade", "tall stack", "alpinejs", "livewire"],
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
           "name": "Daniel Palmieri",
