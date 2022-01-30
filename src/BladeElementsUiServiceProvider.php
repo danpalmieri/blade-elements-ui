@@ -10,10 +10,10 @@ class BladeElementsUiServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'app-ui');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ui');
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => resource_path('views/vendor/app-ui'),
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/ui'),
         ]);
     }
 }
