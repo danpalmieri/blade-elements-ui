@@ -1,0 +1,36 @@
+{
+    "name": "danpalmieri/blade-elements-ui",
+    "description": "Laravel Blade components using TALL stack.",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+          "name": "Daniel Palmieri",
+          "email": "dlspalmieri@gmail.com"
+        }
+      ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "RazorUi\\BladeApplicationUi\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RazorUi\\BladeApplicationUi\\BladeApplicationUiServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
