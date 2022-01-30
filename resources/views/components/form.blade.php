@@ -26,9 +26,9 @@
 
         @if ($heading)
             <div class="space-y-1">
-                <x-app-ui::form.heading>{{ $heading }}</x-app-ui::form.heading>
+                <x-ui::form.heading>{{ $heading }}</x-ui::form.heading>
 
-                <x-app-ui::form.description>{{ $description }}</x-app-ui::form.description>
+                <x-ui::form.description>{{ $description }}</x-ui::form.description>
             </div>
         @endif
 
@@ -49,9 +49,9 @@
 
             @if ($heading)
                 <div class="space-y-1">
-                    <x-app-ui::form.heading>{{ $heading }}</x-app-ui::form.heading>
+                    <x-ui::form.heading>{{ $heading }}</x-ui::form.heading>
 
-                    <x-app-ui::form.description>{{ $description }}</x-app-ui::form.description>
+                    <x-ui::form.description>{{ $description }}</x-ui::form.description>
                 </div>
             @endif
         </div>
@@ -62,12 +62,12 @@
             </div>
 
             @if ($actions)
-                <x-app-ui::hr />
+                <x-ui::hr />
 
                 <div class="px-4 py-2">
-                    <x-app-ui::card.actions>
+                    <x-ui::card.actions>
                         {{ $actions }}
-                    </x-app-ui::card.actions>
+                    </x-ui::card.actions>
                 </div>
             @endif
         </div>

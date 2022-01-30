@@ -54,11 +54,11 @@
         <div class="px-6 py-4 bg-white shadow rounded-xl space-y-4">
             <div class="space-y-1">
                 @if ($heading)
-                    <x-app-ui::popover.heading>{{ $heading }}</x-app-ui::popover.heading>
+                    <x-ui::popover.heading>{{ $heading }}</x-ui::popover.heading>
                 @endif
 
                 @if ($content)
-                    <x-app-ui::popover.content>{{ $content }}</x-app-ui::popover.content>
+                    <x-ui::popover.content>{{ $content }}</x-ui::popover.content>
                 @endif
 
                 {{ $slot }}

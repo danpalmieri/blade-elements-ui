@@ -79,22 +79,22 @@
             @endif
 
             @if ($header && ($actions || $heading || $slot->isNotEmpty() || $subheading))
-                <x-app-ui::hr />
+                <x-ui::hr />
             @endif
 
             <div class="space-y-2">
                 @if ($heading || $subheading)
                     <div class="p-4 space-y-1 text-center">
                         @if ($heading)
-                            <x-app-ui::modal.heading :id="$id . '.heading'">
+                            <x-ui::modal.heading :id="$id . '.heading'">
                                 {{ $heading }}
-                            </x-app-ui::modal.heading>
+                            </x-ui::modal.heading>
                         @endif
 
                         @if ($subheading)
-                            <x-app-ui::modal.subheading>
+                            <x-ui::modal.subheading>
                                 {{ $subheading }}
-                            </x-app-ui::modal.subheading>
+                            </x-ui::modal.subheading>
                         @endif
                     </div>
                 @endif
@@ -109,7 +109,7 @@
             </div>
 
             @if ($footer && ($actions || $heading || $slot->isNotEmpty() || $subheading))
-                <x-app-ui::hr />
+                <x-ui::hr />
             @endif
 
             @if ($footer)

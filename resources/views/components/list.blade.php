@@ -13,19 +13,19 @@
                 @if ($header)
                     {{ $header }}
                 @else
-                    <x-app-ui::list.heading>
+                    <x-ui::list.heading>
                         {{ $heading }}
-                    </x-app-ui::list.heading>
+                    </x-ui::list.heading>
 
                     @if ($subheading)
-                        <x-app-ui::list.subheading>
+                        <x-ui::list.subheading>
                             {{ $subheading }}
-                        </x-app-ui::list.subheading>
+                        </x-ui::list.subheading>
                     @endif
                 @endif
             </div>
 
-            <x-app-ui::hr />
+            <x-ui::hr />
         </div>
     @endif
 
@@ -35,15 +35,15 @@
 
     @if ($footer || $actions)
         <div class="px-2 pb-2 space-y-2">
-            <x-app-ui::hr />
+            <x-ui::hr />
 
             <div class="px-4 py-2">
                 @if ($footer)
                     {{ $footer }}
                 @else
-                    <x-app-ui::list.actions>
+                    <x-ui::list.actions>
                         {{ $actions }}
-                    </x-app-ui::list.actions>
+                    </x-ui::list.actions>
                 @endif
             </div>
         </div>

@@ -60,7 +60,7 @@
                 id="{{ $mobileMenuId }}"
                 class="px-2 md:hidden"
             >
-                <x-app-ui::hr />
+                <x-ui::hr />
 
                 <ul class="flex flex-col py-2 space-y-1 text-sm font-medium text-gray-600">
                     {{ $mobileMenu }}

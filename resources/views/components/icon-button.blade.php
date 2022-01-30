@@ -25,7 +25,7 @@
         {{ $attributes->class([$buttonClasses]) }}
     >
         @if ($label)
-            <x-app-ui::sr-only>{{ $label }}</x-app-ui::sr-only>
+            <x-ui::sr-only>{{ $label }}</x-ui::sr-only>
         @endif
 
         <x-dynamic-component :component="$icon" :class="$iconClasses" />
@@ -33,7 +33,7 @@
 @elseif ($tag === 'a')
     <a {{ $attributes->class([$buttonClasses]) }}>
         @if ($label)
-            <x-app-ui::sr-only>{{ $label }}</x-app-ui::sr-only>
+            <x-ui::sr-only>{{ $label }}</x-ui::sr-only>
         @endif
 
         <x-dynamic-component :component="$icon" :class="$iconClasses" />

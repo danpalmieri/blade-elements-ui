@@ -4,12 +4,12 @@
     'heading' => null,
 ])
 
-<x-app-ui::card {{ $attributes }}>
+<x-ui::card {{ $attributes }}>
     @if ($heading)
         <x-slot name="header">
-            <x-app-ui::card.heading>
+            <x-ui::card.heading>
                 {{ $heading }}
-            </x-app-ui::card.heading>
+            </x-ui::card.heading>
         </x-slot>
     @endif
 
@@ -48,4 +48,4 @@
             </div>
         @endforeach
     </div>
-</x-app-ui::card>
+</x-ui::card>
