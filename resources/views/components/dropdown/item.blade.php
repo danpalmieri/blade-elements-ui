@@ -32,7 +32,7 @@
     ]);
 @endphp
 
-<li {{ $attributes }}>
+<li>
     @if ($tag === 'button')
         <button
             type="{{ $type }}"
