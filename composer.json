@@ -19,13 +19,13 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "RazorUi\\BladeApplicationUi\\": "src"
+            "DanPalmieri\\BladeElementsUi\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "RazorUi\\BladeApplicationUi\\BladeApplicationUiServiceProvider"
+                "DanPalmieri\\BladeElementsUi\\BladeElementsUiServiceProvider"
             ]
         }
     },

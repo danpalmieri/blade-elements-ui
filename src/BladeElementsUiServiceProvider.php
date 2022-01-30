@@ -2,11 +2,11 @@
 
 declare(strict_types = 1);
 
-namespace RazorUi\BladeApplicationUi;
+namespace DanPalmieri\BladeElementsUi;
 
 use Illuminate\Support\ServiceProvider;
 
-class BladeApplicationUiServiceProvider extends ServiceProvider
+class BladeElementsUiServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
