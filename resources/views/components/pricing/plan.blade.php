@@ -12,7 +12,7 @@
             <span class="text-4xl font-extrabold text-gray-900">{{ $price }}</span>
             <span class="text-base font-medium text-gray-500">{{ $period }}</span>
         </p>
-        <div class="mt-5">
+        <div class="mt-8">
             {{ $cta ?? '' }}
         </div>
     </div>
