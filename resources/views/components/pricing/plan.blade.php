@@ -20,6 +20,7 @@
                 {{ $monthly ?? '' }}
             </span>
             <span x-show="show==='annually'">
+                <p class="uppercase border py-1 rounded-full mb-3 text-xs text-center text-gray-500">Pago anualmente</p>
                 {{ $annually ?? '' }}
             </span>
         </div>
