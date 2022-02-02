@@ -1,8 +1,8 @@
 @props([
     'name',
     'description',
-    'priceMonthly',
-    'priceAnnually'
+    'monthlyPrice',
+    'annuallyPrice'
 ])
 <div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
     <div class="p-6">
@@ -11,15 +11,15 @@
         <p class="mt-4 text-sm text-gray-500">{{ $description }}</p>
         @endif
         <p class="mt-8">
-            <span class="text-4xl font-extrabold text-gray-900" x-text="show==='monthly' ? '{{ $priceMonthly }}' : '{{ $priceAnnually }}'"></span>
+            <span class="text-4xl font-extrabold text-gray-900" x-text="show==='monthly' ? '{{ $monthlyPrice }}' : '{{ $annuallyPrice }}'"></span>
             <span class="text-base font-medium text-gray-500" x-text="show==='monthly' ? '/mês' : '/ano'"></span>
         </p>
         <div class="mt-8">
             <span x-show="show==='monthly'">
-                {{ $ctaMonthly ?? '' }}
+                {{ $monthly ?? '' }}
             </span>
             <span x-show="show==='annually'">
-                {{ $ctaAnnually ?? '' }}
+                {{ $annually ?? '' }}
             </span>
         </div>
     </div>

@@ -1,9 +1,10 @@
 @props([
+    'hasMonthly' => true,
     'hasAnnual' => false,
     'anualDiscount' => 20
 ])
 <div x-data="{'show': 'monthly'}">
-    @if($hasAnnual)
+    @if($hasMonthly && $hasAnnual)
     <div class="flex justify-center">
         <div class="relative self-center mb-8 bg-gray-200 rounded-lg p-0.5 flex sm:mt-8">
             <button @click="show='monthly'" :class="show==='monthly' ? 'bg-white text-gray-900 shadow-sm border border-gray-200' : 'text-gray-700 border-transparent'" type="button" class="relative w-1/2 rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-primary-500 focus:z-10 sm:w-auto sm:px-8">Mensal</button>
