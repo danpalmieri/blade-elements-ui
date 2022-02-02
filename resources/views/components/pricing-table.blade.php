@@ -1,9 +1,10 @@
 @props([
     'hasMonthly' => true,
     'hasAnnual' => false,
-    'anualDiscount' => 20
+    'anualDiscount' => 20,
+    'defaultPrice' => 'monthly'
 ])
-<div x-data="{'show': 'monthly'}">
+<div x-data="{'show': '{{ $defaultPrice }}'}">
     @if($hasMonthly && $hasAnnual)
     <div class="flex justify-center">
         <div class="relative self-center mb-8 bg-gray-200 rounded-lg p-0.5 flex sm:mt-8">
