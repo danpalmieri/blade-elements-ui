@@ -14,13 +14,13 @@
         <p class="mt-8">
             <span class="text-4xl font-extrabold text-gray-900" x-text="show==='monthly' ? '{{ $monthlyPrice }}' : '{{ $annuallyPrice }}'"></span>
             <span class="text-base font-medium text-gray-500" _x-text="show==='monthly' ? '/mês' : '/ano'">/mês</span>
+            <p class="uppercase border py-1 rounded-full mt-2 text-xs text-center text-gray-500">Pago anualmente</p>
         </p>
         <div class="mt-8">
             <span x-show="show==='monthly'">
                 {{ $monthly ?? '' }}
             </span>
             <span x-show="show==='annually'">
-                <p class="uppercase border py-1 rounded-full mb-3 text-xs text-center text-gray-500">Pago anualmente</p>
                 {{ $annually ?? '' }}
             </span>
         </div>
