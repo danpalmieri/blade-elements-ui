@@ -15,10 +15,10 @@
             <span class="text-base font-medium text-gray-500" x-text="show==='monthly' ? '/mês' : '/ano'"></span>
         </p>
         <div class="mt-8">
-            <span x-show="'show'==='monthly'">
+            <span x-show="show==='monthly'">
                 {{ $ctaMonthly ?? '' }}
             </span>
-            <span x-show="'show'==='annually'">
+            <span x-show="show==='annually'">
                 {{ $ctaAnnually ?? '' }}
             </span>
         </div>
