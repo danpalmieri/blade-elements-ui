@@ -4,7 +4,7 @@
     'anualDiscount' => 20,
     'defaultPrice' => 'monthly'
 ])
-<div x-data="{'show': '{{ $defaultPrice }}'}">
+<div x-data="{'show': '{{ $defaultPrice }}'}" x-cloak>
     @if($hasMonthly && $hasAnnual)
     <div class="flex justify-center">
         <div class="relative self-center mb-8 bg-gray-200 rounded-lg p-0.5 flex sm:mt-8">
