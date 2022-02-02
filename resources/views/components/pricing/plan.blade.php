@@ -2,7 +2,7 @@
     'name',
     'description',
     'priceMonthly',
-    'priceAnnualy'
+    'priceAnnually'
 ])
 <div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
     <div class="p-6">
