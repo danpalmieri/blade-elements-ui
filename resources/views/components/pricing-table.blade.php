@@ -1,5 +1,5 @@
 @props([
-    'hasAnual' => false,
+    'hasAnnual' => false,
     'anualDiscount' => 20
 ])
 <div x-data="{'show': 'monthly'}">
