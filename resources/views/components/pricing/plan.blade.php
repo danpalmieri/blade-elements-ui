@@ -4,7 +4,7 @@
     'monthlyPrice',
     'annuallyPrice'
 ])
-<div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+<div class="border border-gray-200 bg-white rounded-lg shadow-sm divide-y divide-gray-200">
     <div class="p-6">
         <h2 class="text-lg leading-6 font-medium text-gray-900">{{ $name }}</h2>
         @if($description)
