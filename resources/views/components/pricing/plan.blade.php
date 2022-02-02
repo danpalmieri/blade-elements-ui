@@ -29,7 +29,7 @@
         <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">O que está incluso:</h3>
         <ul role="list" class="mt-6 space-y-4">
             @foreach(collect($features) as $feature)
-            <x-pricing.plan-feature>{{ $feature }}</x-pricing.plan-feature>
+            <x-ui::pricing.plan-feature>{{ $feature }}</x-ui::pricing.plan-feature>
             @endforeach
         </ul>
     </div>
