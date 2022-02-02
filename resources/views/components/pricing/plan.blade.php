@@ -13,7 +13,7 @@
         @endif
         <p class="mt-8">
             <span class="text-4xl font-extrabold text-gray-900" x-text="show==='monthly' ? '{{ $monthlyPrice }}' : '{{ $annuallyPrice }}'"></span>
-            <span class="text-base font-medium text-gray-500" x-text="show==='monthly' ? '/mês' : '/ano'"></span>
+            <span class="text-base font-medium text-gray-500" _x-text="show==='monthly' ? '/mês' : '/ano'">/mês</span>
         </p>
         <div class="mt-8">
             <span x-show="show==='monthly'">
