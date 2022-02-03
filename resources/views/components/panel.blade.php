@@ -31,9 +31,9 @@
     @if(isset($buttonAction) || isset($secondaryButtonAction))
     <div class="flex items-center justify-between flex-shrink-0 p-5 space-x-2 border-t">
         @unless($inline)
-        <x-ui.link-button wire:click="$emit('closeModal')">
+        <x-ui::button color="secondary" size="sm" wire:click="$emit('closeModal')">
             Cancelar
-        </x-ui.link-button>
+        </x-ui::button>
         @else
         <div></div>
         @endunless
