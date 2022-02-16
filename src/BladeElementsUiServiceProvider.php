@@ -13,10 +13,6 @@ class BladeElementsUiServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ui');
 
-        Blade::directive('BladeElementsUiStyles', function () {
-            return '<link rel="stylesheet" href="'.__DIR__ . '/../resources/css/blade-elements-ui.css'.'">';
-        });
-
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/ui'),
         ]);

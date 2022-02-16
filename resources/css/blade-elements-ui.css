@@ -1,3 +1,7 @@
-.tooltip-inner{
-    @apply px-2 mb-1 text-sm leading-5 text-white bg-black rounded-full;
+.tippy-box{
+    @apply px-1 rounded-full;
+}
+
+.tippy-content{
+    @apply text-sm leading-5 text-white;
 }
