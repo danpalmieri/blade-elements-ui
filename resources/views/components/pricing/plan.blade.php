@@ -1,9 +1,9 @@
 @props([
     'name',
-    'description',
-    'monthlyPrice',
-    'annuallyPrice',
-    'features' => null
+    'description' => null,
+    'monthlyPrice' => null,
+    'annuallyPrice' => null,
+    'features' => null,
 ])
 <div class="border border-gray-200 bg-white rounded-lg shadow-sm divide-y divide-gray-200">
     <div class="p-6">
@@ -11,6 +11,7 @@
         @if($description)
         <p class="mt-4 text-sm text-gray-500">{{ $description }}</p>
         @endif
+        @if($monthlyPrice || $annuallyPrice)
         <p class="mt-8">
             <span class="text-4xl font-extrabold text-gray-900" x-text="show==='monthly' ? '{{ $monthlyPrice }}' : '{{ $annuallyPrice }}'"></span>
             <span class="text-base font-medium text-gray-500" _x-text="show==='monthly' ? '/mês' : '/ano'">/mês</span>
@@ -24,6 +25,11 @@
                 {{ $annually ?? '' }}
             </span>
         </div>
+        @else
+        <div class="mt-8">
+            <span class="text-4xl font-extrabold text-gray-900">Consulte</span>
+        </div>
+        @endif
     </div>
     @if($features)
     <div class="pt-6 pb-8 px-6">
