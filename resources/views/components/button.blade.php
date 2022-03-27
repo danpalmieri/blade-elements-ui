@@ -44,7 +44,7 @@
     >
         @if($spinner)
             @if ($icon && $iconPosition === 'before')
-                <x-dynamic-component wire:loading.remove :component="$icon" :class="$iconClasses" />
+                <x-dynamic-component wire:target="{{ $spinner }}" wire:loading.remove :component="$icon" :class="$iconClasses" />
             @endif
         @else
             @if ($icon && $iconPosition === 'before')
@@ -52,7 +52,7 @@
             @endif
         @endif
 
-        <span>{{ $slot }}</span>
+        <span @if($spinner) wire:target="{{ $spinner }}" wire:loading.remove @endif>{{ $slot }}</span>
 
         @if ($spinner)
             <svg class="animate-spin {{ $spinnerIconSize }} shrink-0 ml-2"
