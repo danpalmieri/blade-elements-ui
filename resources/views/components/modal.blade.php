@@ -3,6 +3,7 @@
     'ariaLabelledby' => null,
     'closeEventName' => 'close-modal',
     'displayClasses' => 'inline-block',
+    'outsideClickClose' => true,
     'footer' => null,
     'header' => null,
     'heading' => null,
@@ -41,12 +42,13 @@
         x-cloak
         class="fixed inset-0 z-40 flex items-center min-h-screen p-4 overflow-y-auto"
     >
-        <button
+        <div
+            @if($outsideClickClose)
             x-on:click="open = false"
-            type="button"
+            @endif
             aria-hidden="true"
             class="fixed inset-0 w-full h-full bg-black/50 focus:outline-none"
-        ></button>
+        ></div>
 
         <div
             x-show="open"
