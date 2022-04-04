@@ -8,5 +8,5 @@
     'text-gray-500 transition hover:bg-gray-500/5 focus:bg-primary-500/10 focus:text-primary-600' => ! $active,
     'text-primary-600 bg-primary-100' => $active,
 ]) }}>
-    <x-dynamic-component :component="$icon" class="w-8 h-8" />
+    <x-dynamic-component :component="$icon" class="w-[28px] h-[28px]" />
 </a>
