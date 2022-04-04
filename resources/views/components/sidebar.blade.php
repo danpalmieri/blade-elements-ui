@@ -14,7 +14,7 @@
     'w-80' => $iconMenu,
 ]) }}>
     @if ($iconMenu)
-        <nav class="flex flex-col items-center flex-shrink-0 w-12 py-2 space-y-2 border-r shadow-sm">
+        <nav class="flex flex-col items-center flex-shrink-0 w-16 py-2 space-y-2 border-r shadow-sm">
             {{ $iconMenu }}
         </nav>
     @endif
