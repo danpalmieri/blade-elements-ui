@@ -31,8 +31,8 @@
 
     <main class="{{ generateClasses([
         'flex-1 min-h-screen w-screen',
-        'lg:pl-72' => ! $iconMenu,
-        'lg:pl-80' => $iconMenu,
+        'lg:pl-82' => ! $iconMenu,
+        'lg:pl-90' => $iconMenu,
     ]) }}">
         {{ $slot }}
     </main>

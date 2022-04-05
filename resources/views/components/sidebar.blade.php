@@ -9,7 +9,7 @@
 <div {{ $attributes->class([
     'flex h-full border-r',
     'bg-gray-100' => $backgroundColor !== 'light',
-    'w-72' => ! $iconMenu,
+    'w-82' => ! $iconMenu,
     'bg-white' => $backgroundColor === 'light',
     'w-90' => $iconMenu,
 ]) }}>
