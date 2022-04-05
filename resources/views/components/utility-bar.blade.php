@@ -5,7 +5,7 @@
 ])
 
 <div {{ $attributes->class([
-    'flex items-center justify-between space-x-4 flex-shrink-0 pt-[50px] pb-[40px] px-8',
+    'flex items-center justify-between space-x-4 flex-shrink-0 pt-[40px] pb-[30px] px-8',
     'bg-gray-100' => $backgroundColor !== 'light',
     'bg-white' => $backgroundColor === 'light',
 ]) }}>
