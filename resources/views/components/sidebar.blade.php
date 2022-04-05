@@ -11,7 +11,7 @@
     'bg-gray-100' => $backgroundColor !== 'light',
     'w-72' => ! $iconMenu,
     'bg-white' => $backgroundColor === 'light',
-    'w-80' => $iconMenu,
+    'w-90' => $iconMenu,
 ]) }}>
     @if ($iconMenu)
         <nav class="flex flex-col items-center flex-shrink-0 w-16 py-2 space-y-2 border-r shadow-sm">
@@ -21,7 +21,7 @@
 
     <nav aria-label="{{ $ariaLabel }}" class="flex flex-col flex-1">
         @if ($header)
-            <div class="flex items-center flex-shrink-0 mt-[16px] mb-[5px] px-4">
+            <div class="flex items-center flex-shrink-0 mt-6 mb-3 px-4">
                 {{ $header }}
             </div>
         @endif
